@@ -112,21 +112,31 @@ params:
 mediaTypes:
   'application/announce':
     suffixes: ["data"]
+  text/html+custom:
+    suffixes:
+    - htm
 
 outputFormats:
-  announce:
-    mediaType: "application/announce"
-    baseName: "announce"
-    isPlainText: true
-    notAlternative: true
 ## this trigger generation of Javascript search engine
 #   SearchIndex:
 #     mediaType: "application/json"
 #     baseName: "searchindex"
 #     isPlainText: true
 #     notAlternative: true
+  announce:
+    mediaType: "application/announce"
+    baseName: "announce"
+    isPlainText: true
+    notAlternative: true
+  authorposts:
+    mediaType: "text/html+custom"
+    baseName: "authorposts"
+    isPlainText: false
+    isHTML: true
+    notAlternative: true
+    permalinkable: true
 
-# outputs:
-#   home: ["HTML","RSS", "JSON", "SearchIndex"]
 outputs:
-  home: ["HTML","RSS","JSON","ANNOUNCE"]
+#  home: ["HTML","RSS", "JSON","ANNOUNCE", "SearchIndex"]
+  home: ["HTML","RSS", "JSON","ANNOUNCE"]
+  taxonomy: ["HTML","RSS","AUTHORPOSTS"]
