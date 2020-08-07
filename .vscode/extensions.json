@@ -1,0 +1,32 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-ceintl.vscode-language-pack-it",
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "codezombiech.gitignore",
+        "ziyasal.vscode-open-in-github",
+        "yzhang.markdown-all-in-one",
+        "docsmsft.docs-authoring-pack",
+        "marvhen.reflow-markdown",
+        "stuartleeks.temp-terraform-markdown",
+        "goessner.mdmath",
+        "poyonshot.markdowncat",
+        "enskylin.gitbook-shelf",
+        "pkief.markdown-checkbox",
+        "bierner.markdown-mermaid",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "yzane.markdown-pdf",
+        "shd101wyy.markdown-preview-enhanced",
+        "mdw.vscode-todo-plus-plus",
+        "blunt1337.todo-language",
+        "kukushi.pasteurl",
+        "andyyaldoo.vscode-json",
+        "bishopcodes.vscode-pfw",
+        "vscode-icons-team.vscode-icons",
+        "pkief.material-icon-theme",
+        "equinusocio.vsc-material-theme",
+        "sdras.night-owl"
+    ]
+}
