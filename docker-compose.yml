@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+
+  hugo:
+    image: jojomi/hugo:latest
+    volumes:
+      - .:/src
+      - ./public/:/output
+    environment:
+      - HUGO_REFRESH_TIME=3600
+      - HUGO_THEME=hugo-theme-zen
+      - HUGO_BASEURL=www.getlatestversion.eu
+    restart: always
+
+  web:
+    image: jojomi/nginx-static
+    volumes:
+      - ./public/:/var/www
+    environment:
+      - VIRTUAL_HOST=www.getlatestversion.eu
+    ports:
+      - 80
+    restart: always
